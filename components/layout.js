@@ -1,42 +1,37 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
-const name = 'Jacob Tye'
-export const siteTitle = 'Next.js Sample Website'
+const name = "Jacob Tye";
+export const siteTitle = "Jacob Tye - Software Engineer";
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} shadow`}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          content="Hi! My name is Jacob and I am a Sydney based Software Engineer currently working in the travel and tourism industry."
         />
         <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className={`${styles.header} border-bottom`}>
         {home ? (
           <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <div>
+              <Image
+                priority
+                src="/images/profile.jpg"
+                className={`${utilStyles.borderCircle} shadow`}
+                width={200}
+                height={200}
+                alt={name}
+              />
+              <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            </div>
           </>
         ) : (
           <>
@@ -46,8 +41,8 @@ export default function Layout({ children, home }) {
                   priority
                   src="/images/profile.jpg"
                   className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
+                  height={140}
+                  width={140}
                   alt={name}
                 />
               </a>
@@ -59,6 +54,27 @@ export default function Layout({ children, home }) {
             </h2>
           </>
         )}
+        <nav class="navbar navbar-expand-lg">
+          <div id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/posts/roadmap-2022">
+                  Roadmap 2022
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </header>
       <main>{children}</main>
       {!home && (
@@ -68,6 +84,18 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <footer className="fixed-bottom border-top text-center">
+        <a
+          href="https://github.com/JTy3"
+          class="bi bi-github text-dark mx-1"
+          style={{ fontSize: "2em" }}
+        ></a>
+        <a
+          href="https://au.linkedin.com/in/jacob-t-365814125"
+          class="bi bi-linkedin text-primary mx-1"
+          style={{ fontSize: "2em" }}
+        ></a>
+      </footer>
     </div>
-  )
+  );
 }

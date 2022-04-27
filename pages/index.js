@@ -20,29 +20,55 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Software Engineer based in Sydney Australia.</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <div className="row mt-3">
+        <div className="col-12 col-sm-8">
+          <section className={utilStyles.headingMd}>
+            <h2 className={`${utilStyles.headingLg} mt-0`}>Overview</h2>
+            <p>
+              Hi! My name is Jacob and I am a Sydney based Software Engineer
+              currently working in the travel and tourism industry.
+            </p>
+            <p>
+              I am a passionate Software Engineer and an AWS Enthusiast. In my
+              spare time I enjoy all things tech; from scalable web apps that
+              take my interest, to tinkering with game and VR development.
+            </p>
+            <p>
+              In my day job I maintain and enhance all sorts of applications and
+              services these include projects from internal tools to customer
+              facing applications; legacy code to modern TypeScript and
+              microservices development.
+            </p>
+            <p>
+              I enjoy navigating my way through a terminal and automating
+              everything I can, from deployment pipelines to business process
+              automations.
+            </p>
+            <p>
+              When I am not at my computer I enjoy spending time at the beach,
+              riding motorbikes and building Lego.
+            </p>
+          </section>
+        </div>
+        <div className="col-12 col-sm-4">
+          <section className={`${utilStyles.headingMd}`}>
+            <h2 className={`${utilStyles.headingLg} mt-0`}>Blog</h2>
+            <ul className={utilStyles.list}>
+              {allPostsData.map(({ id, date, title }) => (
+                <li className={utilStyles.listItem} key={id}>
+                  <Link href={`/posts/${id}`}>
+                    <a>{title}</a>
+                  </Link>
+                  <br />
+                  <small className={utilStyles.lightText}>
+                    <Date dateString={date} />
+                  </small>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </div>
+      </div>
     </Layout>
   );
 }

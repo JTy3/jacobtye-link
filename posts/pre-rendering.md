@@ -1,7 +1,9 @@
 ---
-title: 'Two Forms of Pre-rendering'
-date: '2020-01-01'
+title: 'Two Forms of Pre-rendering' 
+date: '2022-04-27'
 ---
+
+**Dislaimer:** This article was written by [Vercel](https://vercel.com/) and was included in their tutorial for [Create a Next.js App](https://nextjs.org/learn/basics/create-nextjs-app). NextJS alleviates a lot of pain points I have had with React and I can thoroughly recommend their tutorial to get you started in NextJS.
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
 
