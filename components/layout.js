@@ -54,21 +54,21 @@ export default function Layout({ children, home }) {
             </h2>
           </>
         )}
-        <nav class="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand-lg">
           <div id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="/">
+            <ul className="navbar-nav">
+              <li className="nav-item active">
+                <a className="nav-link" href="/">
                   Home
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/posts/roadmap-2022">
+              <li className="nav-item">
+                <a className="nav-link" href="/posts/roadmap-2022">
                   Roadmap 2022
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/blog">
+              <li className="nav-item">
+                <a className="nav-link" href="/blog">
                   Blog
                 </a>
               </li>
