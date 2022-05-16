@@ -1,6 +1,7 @@
 ---
 title: 'Projects for 2022' 
 date: '2022-04-28'
+description: 'Technical Project Ideas and Thoughts for 2022 shared by Jacob Tye - Software Engineer in Sydney, NSW Australia'
 ---
 
 Each year I find myself starting new projects, pushing my first weeks worth of commits to Git and then forgetting about it for 6 months.
