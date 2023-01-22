@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import LoginButton from "./login-btn";
 
 const name = "Jacob Tye";
 export const siteTitle = "Jacob Tye - Software Engineer";
@@ -72,6 +73,9 @@ export default function Layout({ children, home }) {
                   <a className="nav-link" href="/blog">
                     Blog
                   </a>
+                </li>
+                <li className="nav-item">
+                  <LoginButton/>
                 </li>
               </ul>
             </div>
