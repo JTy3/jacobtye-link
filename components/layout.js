@@ -102,7 +102,6 @@ export default function Layout({ children, home }) {
           ></a>
         </footer>
       </div>
-      <span className="bg-white p-2"><strong>Background Courtesy of </strong><a href="https://www.svgbackgrounds.com/">SVG Backgrounds</a></span>
     </div>
   );
 }

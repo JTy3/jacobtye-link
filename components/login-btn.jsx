@@ -12,8 +12,7 @@ export default function LoginButton() {
   }
   return (
     <>
-      Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
+      <button className="btn btn-primary" onClick={() => signIn()}>Sign in</button>
     </>
   )
 }
