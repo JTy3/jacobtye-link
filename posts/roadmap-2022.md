@@ -8,7 +8,7 @@ Each year I find myself starting new projects, pushing my first weeks worth of c
 
 I feel semi determined to make this year a bit different. I have ticked one project off which was getting this portfolio published. I was eyeballing NextJS for a while and decided I would go for it.
 
-This year I want to deep dive into some heavy data projects. I would love to build a [Lego](https://lego.com/) querying database and perhaps hook it in to [Amazon](https://amazon.com/) so you can search kits and find them on Amazon. I have also been looking at [TripAdvisor API](https://www.tripadvisor.com/developers). I have been planning a working holiday to Europe and am wondering how far I can get in a weekend. I would like to tap into the Travel and Tourism experience I have and build an application where you can build a radius around a given location by travel time, and have the map pin attractions and points of interest.
+This year I want to deep dive into some heavy data projects. I would love to build a Lego querying database and perhaps hook it in to [Amazon](https://amazon.com/) so you can search kits and find them on Amazon. I have also been looking at [TripAdvisor API](https://www.tripadvisor.com/developers). I have been planning a working holiday to Europe and am wondering how far I can get in a weekend. I would like to tap into the Travel and Tourism experience I have and build an application where you can build a radius around a given location by travel time, and have the map pin attractions and points of interest.
 
 Obviously, all of this requires a bit of help to support. I intend to build my own [Jenkins](https://www.jenkins.io/) environment for CI/CD pipelines in AWS - this will enable me to automate my deployments and achieve a better time to market.
 
