@@ -34,13 +34,13 @@ export default function Home ({ allPostsData }) {
               but I am getting better at documenting the engineering process on here!
             </p>
             <p>
-              In my day job I lead technical decision making processes as well as build and deliver our entire tech stack and product offering.
-              I love a challenge and have welcomed the new year with a change in scenery joining the startup scene.
+              In my day job I lead technical decision making as well as build and deliver our full tech stack and product offering.
+              I love a challenge and have welcomed the new year with a change in scenery joining the startup world.
               I love the pace of it and rapidly building solutions in the matter of days and weeks.
             </p>
             <p>
-              I enjoy a challenge and love collaborative working with others to build a product together. 
-              I like a team that pushes and challenges me, but I also love mentoring and watching others become the best version of themselves!
+              I love collaborative working with others to build a something together and I like a team that pushes and challenges me, 
+              but I also love mentoring and helping others become the best version of themselves.
             </p>
             <p>
               When I am not at my computer I enjoy spending time at the beach,
