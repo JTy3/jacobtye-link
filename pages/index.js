@@ -5,7 +5,7 @@ import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
 
-export async function getStaticProps() {
+export async function getStaticProps () {
   const allPostsData = getSortedPostsData();
   return {
     props: {
@@ -14,7 +14,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ allPostsData }) {
+export default function Home ({ allPostsData }) {
   return (
     <Layout home>
       <Head>
@@ -26,23 +26,21 @@ export default function Home({ allPostsData }) {
             <h2 className={`${utilStyles.headingLg} mt-0`}>Overview</h2>
             <p>
               Hi! My name is Jacob and I am a Sydney based Software Engineer
-              currently working in the travel and tourism industry.
+              currently working at an Insurtech Startup <Link href={`butterinsurance.com.au`}>Butter Insurance</Link>.
             </p>
             <p>
-              I am a passionate Software Engineer and an AWS Enthusiast. In my
-              spare time I enjoy all things tech; from scalable web apps that
-              take my interest, to tinkering with game and VR development.
+              I am a passionate Full Stack Engineer and love to watch others grow. I enjoy all things tech; and dabble in side projects 
+              from scalable web apps that take my interest, to tinkering with game and VR development. Usually these projects lead nowhere;
+              but I am getting better at documenting the engineering process on here!
             </p>
             <p>
-              In my day job I maintain and enhance all sorts of applications and
-              services these include projects from internal tools to customer
-              facing applications; legacy code to modern TypeScript and
-              microservices development.
+              In my day job I lead technical decision making processes as well as build and deliver our entire tech stack and product offering.
+              I love a challenge and have welcomed the new year with a change in scenery joining the startup scene.
+              I love the pace of it and rapidly building solutions in the matter of days and weeks.
             </p>
             <p>
-              I enjoy navigating my way through a terminal and automating
-              everything I can, from deployment pipelines to business process
-              automations.
+              I enjoy a challenge and love collaborative working with others to build a product together. 
+              I like a team that pushes and challenges me, but I also love mentoring and watching others become the best version of themselves!
             </p>
             <p>
               When I am not at my computer I enjoy spending time at the beach,
