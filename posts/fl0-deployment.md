@@ -30,8 +30,7 @@ I was introduced to the team at fl0 earlier on in the year when I started my cur
 
 They were a busy team but had taken the time to get a neat codebase in place for me to walk into in what I can tell was a chaotic few months for all involved. Their product was a neat and tidy Web UI that let you deploy Node and Postgres services in a few clicks. Whilst I appreciated the simplicity of the app it was in beta and there were still a few things to be done - one thing I really wanted to see was a way to deploy my frontend as well. In a world of Jamstacks, I was keen to see a version of fl0 where you got to choose your own stack but of course, you have to start somewhere and Node and Postgres is a fair place to start. 
 
-Well about 2 weeks ago fl0 announced their new site and early access by quite literally saying 'New site, who dis'. No I'm not joking look: 
-![enter image description here]
+Well about 2 weeks ago fl0 announced their new site and early access by quite literally saying 'New site, who dis'. No I'm not joking look [here.](https://www.linkedin.com/feed/update/urn:li:activity:7057516347970260992/) 
 
 I wanted to jump in and take a look and it is fair to say I see the vision and I am here for it.
 
