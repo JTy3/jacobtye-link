@@ -26,7 +26,7 @@ export default function Layout({ children, home }) {
               <div>
                 <Image
                   priority
-                  src="/images/headshot.png"
+                  src="/images/profile.jpg"
                   className={`${utilStyles.borderCircle} border shadow-sm`}
                   width={200}
                   height={200}
@@ -41,7 +41,7 @@ export default function Layout({ children, home }) {
                 <a>
                   <Image
                     priority
-                    src="/images/headshot.png"
+                    src="/images/profile.jpg"
                     className={`${utilStyles.borderCircle} border shadow-sm`}
                     height={140}
                     width={140}
