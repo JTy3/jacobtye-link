@@ -74,9 +74,6 @@ export default function Layout({ children, home }) {
                     Blog
                   </a>
                 </li>
-                <li className="nav-item">
-                  <LoginButton/>
-                </li>
               </ul>
             </div>
           </nav>
