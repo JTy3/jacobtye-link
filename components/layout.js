@@ -8,7 +8,7 @@ import LoginButton from "./login-btn";
 const name = "Jacob Tye";
 export const siteTitle = "Jacob Tye - Software Engineer";
 
-export default function Layout({ children, home }) {
+export default function Layout ({ children, home }) {
   return (
     <div>
       <div className={`${styles.container} shadow-lg my-5`}>
@@ -38,7 +38,7 @@ export default function Layout({ children, home }) {
           ) : (
             <>
               <Link href="/">
-                <a>
+                <Link>
                   <Image
                     priority
                     src="/images/profile.jpg"
@@ -47,11 +47,11 @@ export default function Layout({ children, home }) {
                     width={140}
                     alt={name}
                   />
-                </a>
+                </Link>
               </Link>
               <h2 className={utilStyles.headingLg}>
                 <Link href="/">
-                  <a className={utilStyles.colorInherit}>{name}</a>
+                  <span className={utilStyles.colorInherit}>{name}</span>
                 </Link>
               </h2>
             </>
@@ -60,19 +60,14 @@ export default function Layout({ children, home }) {
             <div id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item active">
-                  <a className="nav-link" href="/">
+                  <Link className="nav-link" href="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/posts/roadmap-2022">
-                    Roadmap 2022
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/blog">
+                  <Link className="nav-link" href="/blog">
                     Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -82,21 +77,21 @@ export default function Layout({ children, home }) {
         {!home && (
           <div className={styles.backToHome}>
             <Link href="/">
-              <a>← Back to home</a>
+              ← Back to home
             </Link>
           </div>
         )}
         <footer className="border-top text-center mt-5">
-          <a
+          <Link
             href="https://github.com/JTy3"
             className="bi bi-github text-dark mx-1"
             style={{ fontSize: "2em" }}
-          ></a>
-          <a
+          ></Link>
+          <Link
             href="https://au.linkedin.com/in/jacob-t-365814125"
             className="bi bi-linkedin text-primary mx-1"
             style={{ fontSize: "2em" }}
-          ></a>
+          ></Link>
         </footer>
       </div>
     </div>
