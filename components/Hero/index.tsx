@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default () => {
+const Hero = () => {
   return (
     <>
       <section className="py-28">
@@ -85,3 +85,5 @@ export default () => {
     </>
   );
 };
+
+export default Hero;
