@@ -4,19 +4,20 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <>
-      <section className="py-28">
-        <div className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
-          <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
+      <section className="py-16 md:py-28">
+        <div className="max-w-7xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
+          <div className="flex-none space-y-5 px-4 sm:max-w-sm md:px-0 xl:max-w-2xl">
             <h1 className="text-sm text-green-600 font-medium">Hey there!</h1>
             <h2 className="text-4xl text-gray-800 font-extrabold md:text-5xl">
               My name is Jacob!
             </h2>
             <p>
               I am a passionate Full Stack Developer with a love of all things
-              tech. I love to meet and chat with people from all walks of life
+              tech. I like to meet and chat with people from all walks of life
               and am a true believer in learning something from everyone I meet.
-              I like to lead by example and nothing makes me happier than helping
+              I lead by example and nothing makes me happier than helping
               others become the best version of themselves.
+              
             </p>
             <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
               <Link
@@ -45,12 +46,12 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="flex-none mt-14 md:mt-0 md:max-w-xl">
+          <div className="flex-none mt-14 md:mt-0 lg:max-w-xl">
             <Image
-              height={400}
-              width={400}
+              height={500}
+              width={500}
               src="/profile.jpg"
-              className=" md:rounded-full"
+              className="md:rounded-tl-[108px]"
               alt=""
             />
           </div>
